@@ -1,96 +1,86 @@
 body {
-    background: #e8e8e8;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: auto;
-}
+  background: #e8e8e8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  font: 100% sans-serif, Arial; }
 
 .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
-.profile {
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -150px 0 0 -250px;
-    background: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
 
 .profile-tabs {
-    position: relative;
-    box-sizing: border-box;
-    padding-top: 30px;
-    height: 270px;
-    color: #5a2d2d;
-}
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 30px;
+  height: 270px;
+  color: #5a2d2d; }
 
 .profile-tab-item {
-    text-align: left;
-    height: 200px;
-    width: 300px;
-}
-
-.profile-tab-item ul li {
-    list-style-type: none;
-}
+  text-align: left;
+  height: 100px;
+  width: 300px; }
+  .profile-tab-item ul li {
+    list-style-type: none; }
 
 .tab {
-    position: absolute;
-    top: 40px;
-    left: 200px;
-}
-
-.tab.fade {
+  position: absolute;
+  top: 140px;
+  left: 200px; }
+  .tab.fade {
     opacity: 0;
     -webkit-transition: opacity .5s linear;
     -o-transition: opacity .5s linear;
-    transition: opacity .5s linear;
-}
+    transition: opacity .5s linear; }
+  .tab.active {
+    opacity: 1; }
 
-.tab.active {
-    opacity: 1;
-}
-
-.round {
-    border-radius: 100px;
-    border: 5px solid #b08080;
-}
-
-.profile .nav {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    clear: both;
-    width: 500px;
-    height: 30px;
-}
-
-.profile .nav li {
+.nav-tabs {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  clear: both;
+  width: 500px;
+  height: 30px; }
+  .nav-tabs li {
     cursor: pointer;
     width: 250px;
     height: 30px;
     list-style-type: none;
-    float: left;
-}
+    float: left; }
+    .nav-tabs li.active {
+      background: #f5eded; }
+    .nav-tabs li a {
+      text-align: center;
+      text-decoration: none;
+      color: #c6a9b9; }
 
-.profile .nav li a {
-    text-align: center;
-    text-decoration: none;
-    color: #c6a9b9;
-}
+.profile {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -250px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
-.profile .nav li.active {
-    background: #f5eded;
-}
+.profile-image {
+  height: 100%;
+  width: 40%;
+  text-align: center; }
+  .profile-image .round {
+    border-radius: 100px;
+    border: 5px solid #b08080; }
+
+.profile-heading {
+  position: absolute;
+  top: 40px;
+  left: 200px; }

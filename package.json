@@ -1,0 +1,15 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "blogfoster",
+  "description": "Blogfoster",
+  "repository": "https://github.com/SmirnovaOlga/blogfoster",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-sass": "^1.3.2"
+  }
+}

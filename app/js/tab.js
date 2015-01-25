@@ -1,6 +1,6 @@
 function Tab(element) {
 
-    var navTabsElements = element.find('.nav li');
+    var navTabsElements = element.find('.nav-tabs li');
 
     navTabsElements.on('click', function () {
 

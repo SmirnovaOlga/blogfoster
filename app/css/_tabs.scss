@@ -1,0 +1,63 @@
+.profile-tabs {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 30px;
+    height: 270px;
+    color: $font-color;
+}
+
+.profile-tab-item {
+    text-align: left;
+    height: 100px;
+    width: 300px;
+
+    ul li {
+        list-style-type: none;
+    }
+}
+
+
+.tab {
+    position: absolute;
+    top: 140px;
+    left: 200px;
+
+    &.fade {
+        opacity: 0;
+        -webkit-transition: opacity .5s linear;
+        -o-transition: opacity .5s linear;
+        transition: opacity .5s linear;
+    }
+    &.active {
+        opacity: 1;
+    }
+}
+
+
+.nav-tabs {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    clear: both;
+    width: 500px;
+    height: 30px;
+
+    li {
+        cursor: pointer;
+        width: 250px;
+        height: 30px;
+        list-style-type: none;
+        float: left;
+
+        &.active {
+            background: #f5eded;
+        }
+
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: #c6a9b9;
+        }
+    }
+}
+
