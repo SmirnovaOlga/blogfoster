@@ -5,7 +5,9 @@ gulp.task('default',['sass', 'watch']);
 
 gulp.task('sass', function () {
     gulp.src('./app/css/*.scss')
-        .pipe(sass())
+        .pipe(sass({
+            includePaths: require('node-bourbon').includePaths
+        }))
         .pipe(gulp.dest('./app/css'));
 });
 

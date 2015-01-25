@@ -1,6 +1,6 @@
 .profile-tabs {
+    @include box-sizing(border-box);
     position: relative;
-    box-sizing: border-box;
     padding-top: 30px;
     height: 270px;
     color: $font-color;
@@ -24,9 +24,7 @@
 
     &.fade {
         opacity: 0;
-        -webkit-transition: opacity .5s linear;
-        -o-transition: opacity .5s linear;
-        transition: opacity .5s linear;
+        @include transition(opacity .5s linear);
     }
     &.active {
         opacity: 1;
@@ -50,7 +48,8 @@
         float: left;
 
         &.active {
-            background: #f5eded;
+            @include linear-gradient(#f5eded, #fff);
+            box-shadow: 0 0 1px rgba(0,0,0,0.5);
         }
 
         a {
