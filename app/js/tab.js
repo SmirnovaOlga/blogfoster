@@ -4,6 +4,8 @@ function Tab(element) {
 
     navTabsElements.on('click', function () {
 
+        console.log('hello');
+
         $(this).addClass('active');
         navTabsElements.not(this).removeClass('active');
 

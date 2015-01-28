@@ -1,27 +1,37 @@
 .profile {
     width: 500px;
-    height: 300px;
+    height: 316px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -150px 0 0 -250px;
+    margin: -158px 0 0 -250px;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 3px;
 }
 
 .profile-image {
-    height: 100%;
-    width: 40%;
-    text-align: center;
+    @include box-sizing(border-box);
+    height: 216px;
+    width: 168px;
+    padding: 37px 0 0 53px;
 
     .round {
         border-radius: 100px;
-        border: 5px solid #b08080;
+        border: 5px solid #c27f7f;
     }
 }
 
 .profile-heading {
     position: absolute;
-    top: 40px;
-    left: 200px;
+    top: 50px;
+    left: 187px;
+
+    h2 {       
+        margin-bottom: 4px;
+    }
+}
+
+.profile-icon {
+    padding-right: 12px;
 }

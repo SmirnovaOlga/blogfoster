@@ -1,26 +1,32 @@
 .profile-tabs {
     @include box-sizing(border-box);
-    position: relative;
-    padding-top: 30px;
-    height: 270px;
+    position: relative;    
+    height: 275px;
     color: $font-color;
 }
 
 .profile-tab-item {
     text-align: left;
     height: 100px;
-    width: 300px;
+    width: 300px;    
 
-    ul li {
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
         list-style-type: none;
-    }
+        padding-bottom: 15px; 
+
+        }    
+    }     
 }
 
 
 .tab {
     position: absolute;
-    top: 140px;
-    left: 200px;
+    top: 154px;
+    left: 187px;
 
     &.fade {
         opacity: 0;
@@ -38,25 +44,41 @@
     text-align: center;
     clear: both;
     width: 500px;
-    height: 30px;
+    height: 40px;
 
     li {
+        @include box-sizing(border-box);        
         cursor: pointer;
         width: 250px;
-        height: 30px;
+        height: 40px;
         list-style-type: none;
         float: left;
+        font: bold 14px sans-serif;               
 
         &.active {
-            @include linear-gradient(#f5eded, #fff);
-            box-shadow: 0 0 1px rgba(0,0,0,0.5);
+            @include linear-gradient(#f9eded, #fff);
+            box-shadow: 0 0 1px rgba(0,0,0,0.5);            
+            
+            a {
+                color: #c27f7f;
+            }
         }
 
-        a {
+        a {    
+            color: #e0bfbf;            
             text-align: center;
-            text-decoration: none;
-            color: #c6a9b9;
+            text-decoration: none;            
         }
     }
+
+    li:first-child {
+        padding: 14px 82px 0 74px;
+    }
+
+     li:last-child {
+        padding: 14px 72px 0 82px;
+    }
+
+
 }
 
